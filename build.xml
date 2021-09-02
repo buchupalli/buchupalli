@@ -11,10 +11,6 @@
 		<javac srcdir="src" destdir="classes" />
 	</target>
 	
-	<target name="compile" depends="compile">
-		<javac includeantruntime="false" ...>...</javac>
-	</target>
-	
 	<target name="compress" depends="compile">
 	        <jar destfile="jarfiles/Gspann.jar" basedir="classes" />
 	</target>
